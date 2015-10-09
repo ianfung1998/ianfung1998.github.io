@@ -88,14 +88,15 @@
 		<a href="/about" title="Ian" target="_blank" itemprop="author">Ian</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-09T00:45:33.000Z" itemprop="datePublished"> 发表于 2015-10-09</time>
+    <time datetime="2015-10-09T01:44:55.000Z" itemprop="datePublished"> 发表于 2015-10-09</time>
     
   </p>
 </header>
     <div class="article-content">
         
         <p>我写下我的第一遍文章，以mac osx为例以尽量简单的步骤描述一下我搭建的整个过程，方便大家参考，顺带也记录一下，在使用<a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>中的时候，感觉生成的漂亮的页面是如此的简单，安装个框架，几句命令就可以了。</p>
-<h2 id="一、安装本地环境">一、安装本地环境</h2><ol>
+<h2 id="一、安装本地环境">一、安装本地环境</h2><hr>
+<ol>
 <li><p><a href="http://www.git-scm.com/download/" target="_blank" rel="external">Git</a>官方网站下载并安装。</p>
 </li>
 <li><p><a href="http://nodejs.org/download/" target="_blank" rel="external">Node Js</a>官方网站下载并安装。</p>
@@ -104,9 +105,15 @@
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="二、注册GitHub账号、购买域名">二、注册GitHub账号、购买域名</h2><ol>
-<li>在<a href="http://www.github.com/" target="_blank" rel="external">GitHub</a>按步骤一步步注册账号，并创建repository,详细步骤请参考<a href="http://www.pchou.info/web-build/2013/01/03/build-github-blog-page-01.html" target="_blank" rel="external">一步步在GitHub上创建博客主页</a></li>
-<li>(可选，有域名更好一些，好记，好推广)购买域名推荐在godaddy上购买，可以避免好多麻烦，什么备&amp;案之类的，也可以用支付宝，比较方便。不过使用了一些网上搜的优惠码，支付宝有不能用的情况。我直接使用的是官方的优惠，没有使用搜到的码。</li>
+<h2 id="二、注册GitHub账号、购买域名">二、注册GitHub账号、购买域名</h2><hr>
+<ol>
+<li><p>在<a href="http://www.github.com/" target="_blank" rel="external">GitHub</a>按步骤一步步注册账号，并创建repository,详细步骤请参考<a href="http://www.pchou.info/web-build/2013/01/03/build-github-blog-page-01.html" target="_blank" rel="external">一步步在GitHub上创建博客主页</a></p>
+<p> 在创建博客之前，当然必须有GitHub的帐号，该帐号将用来创建项目，默认的域名username.github.com/projectName中的username也要用到这个帐号。</p>
+<pre><code>注意：下面涉及到的一些命令凡是更用户名和项目名有关的一律会用这里的username和projectName代替，注意替换
+</code></pre><p> 访问：<a href="http://www.github.com/，注册你的username和邮箱，邮箱十分重要，GitHub上很多通知都是通过邮箱的。比如你的主页上传并构建成功会通过邮箱通知，更重要的是，如果构建失败的话也会在邮件中说明原因。" target="_blank" rel="external">http://www.github.com/，注册你的username和邮箱，邮箱十分重要，GitHub上很多通知都是通过邮箱的。比如你的主页上传并构建成功会通过邮箱通知，更重要的是，如果构建失败的话也会在邮件中说明原因。</a></p>
+</li>
+<li><p>(可选，有域名更好一些，好记，好推广)购买域名推荐在godaddy上购买，可以避免好多麻烦，什么备&amp;案之类的，也可以用支付宝，比较方便。不过使用了一些网上搜的优惠码，支付宝有不能用的情况。我直接使用的是官方的优惠，没有使用搜到的码。</p>
+</li>
 </ol>
 <h2 id="三、写作并发部-快速开始">三、写作并发部-快速开始</h2><hr>
 <h3 id="新建文章">新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
