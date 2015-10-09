@@ -88,7 +88,7 @@
 		<a href="/about" title="Ian" target="_blank" itemprop="author">Ian</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-09T02:20:44.000Z" itemprop="datePublished"> 发表于 2015-10-09</time>
+    <time datetime="2015-10-09T03:22:03.000Z" itemprop="datePublished"> 发表于 2015-10-09</time>
     
   </p>
 </header>
@@ -108,12 +108,22 @@
 <h2 id="二、注册GitHub账号、购买域名">二、注册GitHub账号、购买域名</h2><hr>
 <ol>
 <li><p>在<a href="http://www.github.com/" target="_blank" rel="external">GitHub</a>按步骤一步步注册账号，并创建repository,详细步骤请参考<a href="http://www.pchou.info/web-build/2013/01/03/build-github-blog-page-01.html" target="_blank" rel="external">一步步在GitHub上创建博客主页</a></p>
-<p> 在创建博客之前，当然必须有GitHub的帐号，该帐号将用来创建项目，默认的域名username.github.com/projectName中的username也要用到这个帐号。</p>
-<pre><code>注意：下面涉及到的一些命令凡是更用户名和项目名有关的一律会用这里的username和projectName代替，注意替换
-</code></pre><p> 访问：<a href="http://www.github.com/" target="_blank" rel="external">GitHub</a>，注册你的username和邮箱，邮箱十分重要，GitHub上很多通知都是通过邮箱的。比如你的主页上传并构建成功会通过邮箱通知，更重要的是，如果构建失败的话也会在邮件中说明原因。</p>
+<ul>
+<li><p>在创建博客之前，当然必须有GitHub的帐号，该帐号将用来创建项目，默认的域名username.github.com/projectName中的username也要用到这个帐号。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注意：下面涉及到的一些命令凡是更用户名和项目名有关的一律会用这里的username和projectName代替，注意替换</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>(可选，有域名更好一些，好记，好推广)购买域名推荐在godaddy上购买，可以避免好多麻烦，什么备&amp;案之类的，也可以用支付宝，比较方便。不过使用了一些网上搜的优惠码，支付宝有不能用的情况。我直接使用的是官方的优惠，没有使用搜到的码。</p>
+<li><p>访问：<a href="http://www.github.com/" target="_blank" rel="external">GitHub</a>，注册你的username和邮箱，邮箱十分重要，GitHub上很多通知都是通过邮箱的。比如你的主页上传并构建成功会通过邮箱通知，更重要的是，如果构建失败的话也会在邮件中说明原因。</p>
 </li>
+<li><p>在创建博客之前，还需要用已有的帐号创建一个项目，上面那个链接的projectName将是这里即将创建的项目名称。在Git中，项目被称为仓库(Repository)，仓库顾名思义，当然可以包含代码或者非代码。将来我们的网页或者模板实际上都是保存在这个仓库中的。<br><img src="http://www.pchou.info/assets/img/build-github-blog-page-02-img0.png" alt="引用一步步在GitHub上创建博客图片"></p>
+</li>
+<li><p>创建了仓库后，我们就需要管理它，无论是管理本地仓库还是远程仓库都需要Git客户端。Git客户端实际上十分强大，它本身就可以offline的创建本地仓库，而本地仓库和远程仓库之间的同步也是通过Git客户端完成的。</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>这里省略了windows下安装和使用Git客户端的基本技巧，您应该已经掌握此技能了。虽然，您仍然可以按照本教程的指引完成一个简单的网站，但是后期的维护工作无论如何都不能少了这项技能。</p>
+<ol>
+<li>(可选，有域名更好一些，好记，好推广)购买域名推荐在godaddy上购买，可以避免好多麻烦，什么备&amp;案之类的，也可以用支付宝，比较方便。不过使用了一些网上搜的优惠码，支付宝有不能用的情况。我直接使用的是官方的优惠，没有使用搜到的码。</li>
 </ol>
 <h2 id="三、写作并发部-快速开始">三、写作并发部-快速开始</h2><hr>
 <h3 id="新建文章">新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
