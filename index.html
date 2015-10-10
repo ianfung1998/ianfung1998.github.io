@@ -88,7 +88,7 @@
 		<a href="/about" title="Ian" target="_blank" itemprop="author">Ian</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-10T01:37:01.000Z" itemprop="datePublished"> 发表于 2015-10-10</time>
+    <time datetime="2015-10-10T01:39:15.000Z" itemprop="datePublished"> 发表于 2015-10-10</time>
     
   </p>
 </header>
@@ -132,101 +132,101 @@
 </ol>
 <h2 id="三、配置">三、配置</h2><hr>
 <p>在步骤一中第3条在blog文件夹中有一个名为_config.yml的配置文件，直接把我的配置文件贴上来，供大家参考  </p>
-<pre><code>\<span class="preprocessor"># Hexo Configuration  </span>
-\<span class="preprocessor">## Docs: http://hexo.io/docs/configuration.html  </span>
-\<span class="preprocessor">## Source: https://github.com/hexojs/hexo/  </span>
+<pre><code><span class="preprocessor"># Hexo Configuration  </span>
+<span class="preprocessor">## Docs: http://hexo.io/docs/configuration.html  </span>
+<span class="preprocessor">## Source: https://github.com/hexojs/hexo/  </span>
 
-\<span class="preprocessor"># Site  </span>
-<span class="label">title:</span> Ian’s Blog  
-<span class="label">subtitle:</span> Yeah  
-<span class="label">description:</span> No  
-<span class="label">author:</span> Ian  
-<span class="label">language:</span> <span class="built_in">zh</span>-CN  
-<span class="label">timezone:</span>  
+<span class="preprocessor"># Site  </span>
+title: Ian’s Blog  
+subtitle: Yeah  
+description: No  
+author: Ian  
+language: zh-CN  
+timezone:  
 
-\<span class="preprocessor"># URL  </span>
-\<span class="preprocessor">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'  </span>
-<span class="label">url:</span> http://china-developer.com  
-<span class="label">root:</span> /  
-<span class="label">permalink:</span> :year/:month/:day/:title/  
-<span class="label">permalink_defaults:</span>  
+<span class="preprocessor"># URL  </span>
+<span class="preprocessor">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'  </span>
+url: http:<span class="comment">//china-developer.com  </span>
+root: /  
+permalink: :year/:month/:day/:title/  
+permalink_defaults:  
 
-\<span class="preprocessor"># Directory  </span>
-<span class="label">source_dir:</span> source  
-<span class="label">public_dir:</span> public  
-<span class="label">tag_dir:</span> tags  
-<span class="label">archive_dir:</span> archives  
-<span class="label">category_dir:</span> categories  
-<span class="label">code_dir:</span> downloads/code  
-<span class="label">i18n_dir:</span> :lang  
-<span class="label">skip_render:</span>  
+<span class="preprocessor"># Directory  </span>
+source_dir: source  
+public_dir: <span class="keyword">public</span>  
+tag_dir: tags  
+archive_dir: archives  
+category_dir: categories  
+code_dir: downloads/code  
+i18n_dir: :lang  
+skip_render:  
 
-\<span class="preprocessor"># Writing  </span>
-<span class="label">new_post_name:</span> :title.md <span class="preprocessor"># File name of new posts  </span>
-<span class="label">default_layout:</span> post  
-<span class="label">titlecase:</span> false <span class="preprocessor"># Transform title into titlecase  </span>
-<span class="label">external_link:</span> true <span class="preprocessor"># Open external links in new tab  </span>
-<span class="label">filename_case:</span> <span class="number">0</span>  
-<span class="label">render_drafts:</span> false  
-<span class="label">post_asset_folder:</span> false  
-<span class="label">relative_link:</span> false  
-<span class="label">future:</span> true  
-<span class="label">highlight:</span>  
-      enable: true  
-      line_number: true  
-      auto_detect: true  
+<span class="preprocessor"># Writing  </span>
+new_post_name: :title.md # File name of <span class="keyword">new</span> posts  
+default_layout: post  
+titlecase: <span class="literal">false</span> # Transform title into titlecase  
+external_link: <span class="literal">true</span> # Open external links in <span class="keyword">new</span> tab  
+filename_case: <span class="number">0</span>  
+render_drafts: <span class="literal">false</span>  
+post_asset_folder: <span class="literal">false</span>  
+relative_link: <span class="literal">false</span>  
+future: <span class="literal">true</span>  
+highlight:  
+      enable: <span class="literal">true</span>  
+      line_number: <span class="literal">true</span>  
+      auto_detect: <span class="literal">true</span>  
       tab_replace:  
 
-\<span class="preprocessor"># Category &amp; Tag  </span>
-<span class="label">default_category:</span> uncategorized  
-<span class="label">category_map:</span>  
-<span class="label">tag_map:</span>  
+<span class="preprocessor"># Category &amp; Tag  </span>
+default_category: uncategorized  
+category_map:  
+tag_map:  
 
-\<span class="preprocessor"># Date / Time format  </span>
-\<span class="preprocessor">## Hexo uses Moment.js to parse and display date  </span>
-\<span class="preprocessor">## You can customize the date format as defined in  </span>
-\<span class="preprocessor">## http://momentjs.com/docs/#/displaying/format/  </span>
-<span class="label">date_format:</span> YYYY-MM-DD  
-<span class="label">time_format:</span> HH:mm:ss  
+<span class="preprocessor"># Date / Time format  </span>
+<span class="preprocessor">## Hexo uses Moment.js to parse and display date  </span>
+<span class="preprocessor">## You can customize the date format as defined in  </span>
+<span class="preprocessor">## http://momentjs.com/docs/#/displaying/format/  </span>
+date_format: YYYY-MM-DD  
+time_format: HH:mm:ss  
 
-\<span class="preprocessor"># Pagination  </span>
-\<span class="preprocessor">## Set per_page to 0 to disable pagination  </span>
-<span class="label">per_page:</span> <span class="number">10</span>  
-<span class="label">pagination_dir:</span> page  
+<span class="preprocessor"># Pagination  </span>
+<span class="preprocessor">## Set per_page to 0 to disable pagination  </span>
+per_page: <span class="number">10</span>  
+pagination_dir: page  
 
-\<span class="preprocessor"># Extensions  </span>
-\<span class="preprocessor">## Plugins: http://hexo.io/plugins/  </span>
-\<span class="preprocessor">## Themes: http://hexo.io/themes/  </span>
-<span class="label">theme:</span> jacman  
+<span class="preprocessor"># Extensions  </span>
+<span class="preprocessor">## Plugins: http://hexo.io/plugins/  </span>
+<span class="preprocessor">## Themes: http://hexo.io/themes/  </span>
+theme: jacman  
 
-\<span class="preprocessor"># Deployment  </span>
-\<span class="preprocessor">## Docs: http://hexo.io/docs/deployment.html  </span>
-<span class="label">deploy:</span>  
+<span class="preprocessor"># Deployment  </span>
+<span class="preprocessor">## Docs: http://hexo.io/docs/deployment.html  </span>
+deploy:  
       type: git  
-  repository: https://github.com/ianfung1998/ianfung1998.github.io.git  
+  repository: https:<span class="comment">//github.com/ianfung1998/ianfung1998.github.io.git  </span>
   branch: master  
 
-\<span class="preprocessor"># 建站日期  </span>
-<span class="label">since:</span> <span class="number">2015</span>  
-\<span class="preprocessor"># 头像(使用七牛云存储做图床)  </span>
-<span class="label">avatar:</span> http://<span class="number">7</span>xn3um.com1.z0.glb.clouddn.com/face.jpg  
-\<span class="preprocessor"># 社交 （社交网站个人主页）  </span>
-<span class="label">social:</span>  
-      github: https://github.com/ianfung1998  
-\<span class="preprocessor"># 多说 （在多说官网注册后，添加站点，绑定域名，找到自己的duoshuo_shortname）  </span>
-<span class="label">duoshuo_shortname:</span> china-developer  
-\<span class="preprocessor">#百度统计 （在百度统计注册后，添加站点，填写id）  </span>
-<span class="label">baidu_analytics:</span> e08519*************a464  
-\<span class="preprocessor"># JiaThis 分享服务  </span>
-<span class="label">jiathis:</span> true  
-\<span class="preprocessor"># 百度分享服务  </span>
-<span class="label">baidushare:</span> false  
-\<span class="preprocessor"># 多说分享服务  </span>
-<span class="label">duoshuo_share:</span> false  
-\<span class="preprocessor"># Swiftype Search Key  </span>
-\<span class="preprocessor"># swiftype_key: zhMqCY6*******voNv  </span>
-\<span class="preprocessor"># 多说热评文章 true 或者 false  </span>
-<span class="label">duoshuo_hotartical:</span> true  
+<span class="preprocessor"># 建站日期  </span>
+since: <span class="number">2015</span>  
+<span class="preprocessor"># 头像(使用七牛云存储做图床)  </span>
+avatar: http:<span class="comment">//7xn3um.com1.z0.glb.clouddn.com/face.jpg  </span>
+<span class="preprocessor"># 社交 （社交网站个人主页）  </span>
+social:  
+      github: https:<span class="comment">//github.com/ianfung1998  </span>
+<span class="preprocessor"># 多说 （在多说官网注册后，添加站点，绑定域名，找到自己的duoshuo_shortname）  </span>
+duoshuo_shortname: china-developer  
+<span class="preprocessor">#百度统计 （在百度统计注册后，添加站点，填写id）  </span>
+baidu_analytics: e08519*************a464  
+<span class="preprocessor"># JiaThis 分享服务  </span>
+jiathis: <span class="literal">true</span>  
+<span class="preprocessor"># 百度分享服务  </span>
+baidushare: <span class="literal">false</span>  
+<span class="preprocessor"># 多说分享服务  </span>
+duoshuo_share: <span class="literal">false</span>  
+<span class="preprocessor"># Swiftype Search Key  </span>
+<span class="preprocessor"># swiftype_key: zhMqCY6*******voNv  </span>
+<span class="preprocessor"># 多说热评文章 true 或者 false  </span>
+duoshuo_hotartical: <span class="literal">true</span>  
 </code></pre><h2 id="四、写作并发部-快速开始">四、写作并发部-快速开始</h2><hr>
 <h3 id="新建文章">新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>更多详情: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">写作</a></p>
