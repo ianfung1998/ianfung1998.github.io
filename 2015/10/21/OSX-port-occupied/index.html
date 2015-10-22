@@ -14,7 +14,8 @@
     <meta name="description" content="当在OSX遇到端口暂用，可以采用以下的方法：
 查看暂用程序信息lsof -i -n -P|grep 8080  
 运行效果如下图：
-根据PID kill掉相应的进程kill -9 31319">
+根据PID kill掉相应的进程kill -9 31319
+以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OSX 进程被暂用处理方法">
 <meta property="og:url" content="http://china-developer.com/2015/10/21/OSX-port-occupied/index.html">
@@ -22,15 +23,17 @@
 <meta property="og:description" content="当在OSX遇到端口暂用，可以采用以下的方法：
 查看暂用程序信息lsof -i -n -P|grep 8080  
 运行效果如下图：
-根据PID kill掉相应的进程kill -9 31319">
+根据PID kill掉相应的进程kill -9 31319
+以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
 <meta property="og:image" content="http://7xn3um.com1.z0.glb.clouddn.com/search-port.png">
-<meta property="og:updated_time" content="2015-10-21T13:50:10.000Z">
+<meta property="og:updated_time" content="2015-10-22T01:27:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OSX 进程被暂用处理方法">
 <meta name="twitter:description" content="当在OSX遇到端口暂用，可以采用以下的方法：
 查看暂用程序信息lsof -i -n -P|grep 8080  
 运行效果如下图：
-根据PID kill掉相应的进程kill -9 31319">
+根据PID kill掉相应的进程kill -9 31319
+以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
 
     
     <link rel="alternative" href="/atom.xml" title="Ian’s Blog" type="application/atom+xml">
@@ -106,7 +109,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上两条命令也可以合成一条写成如下："><span class="toc-number">3.</span> <span class="toc-text">以上两条命令也可以合成一条写成如下：</span></a></li></ol>
 		
 		</div>
 		
@@ -114,6 +117,7 @@
 <h2 id="查看暂用程序信息">查看暂用程序信息</h2><p><code>lsof -i -n -P|grep 8080</code>  </p>
 <p>运行效果如下图：<br><img src="http://7xn3um.com1.z0.glb.clouddn.com/search-port.png" alt=""></p>
 <h2 id="根据PID_kill掉相应的进程">根据PID kill掉相应的进程</h2><p><code>kill -9 31319</code></p>
+<h2 id="以上两条命令也可以合成一条写成如下：">以上两条命令也可以合成一条写成如下：</h2><p><code>lsof -i:8080 -n -P|awk &#39;{print $2}&#39;|sed &#39;1d&#39;|uniq |xargs kill -9</code></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -172,7 +176,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上两条命令也可以合成一条写成如下："><span class="toc-number">3.</span> <span class="toc-text">以上两条命令也可以合成一条写成如下：</span></a></li></ol>
  
   </div>
 
