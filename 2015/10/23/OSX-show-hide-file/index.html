@@ -4,36 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>OSX 进程被暂用处理方法 | Ian’s Blog</title>
+    <title>OSX 文件显示隐藏方法 | Ian’s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Ian">
     
 
     
-    <meta name="description" content="当在OSX遇到端口暂用，可以采用以下的方法：
-查看暂用程序信息lsof -i -n -P|grep 8080  
-运行效果如下图：
-根据PID kill掉相应的进程kill -9 31651
-以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
+    <meta name="description" content="当在OSX要显示隐藏文件时，可以采用以下的方法：
+显示defaults write com.apple.finder AppleShowAllFiles -bool true  
+隐藏defaults write com.apple.finder AppleShowAllFiles -bool false">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OSX 进程被暂用处理方法">
-<meta property="og:url" content="http://china-developer.com/2015/10/21/OSX-port-occupied/index.html">
+<meta property="og:title" content="OSX 文件显示隐藏方法">
+<meta property="og:url" content="http://china-developer.com/2015/10/23/OSX-show-hide-file/index.html">
 <meta property="og:site_name" content="Ian’s Blog">
-<meta property="og:description" content="当在OSX遇到端口暂用，可以采用以下的方法：
-查看暂用程序信息lsof -i -n -P|grep 8080  
-运行效果如下图：
-根据PID kill掉相应的进程kill -9 31651
-以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
-<meta property="og:image" content="http://7xn3um.com1.z0.glb.clouddn.com/search-port.png">
-<meta property="og:updated_time" content="2015-10-22T13:39:17.000Z">
+<meta property="og:description" content="当在OSX要显示隐藏文件时，可以采用以下的方法：
+显示defaults write com.apple.finder AppleShowAllFiles -bool true  
+隐藏defaults write com.apple.finder AppleShowAllFiles -bool false">
+<meta property="og:updated_time" content="2015-10-23T09:34:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OSX 进程被暂用处理方法">
-<meta name="twitter:description" content="当在OSX遇到端口暂用，可以采用以下的方法：
-查看暂用程序信息lsof -i -n -P|grep 8080  
-运行效果如下图：
-根据PID kill掉相应的进程kill -9 31651
-以上两条命令也可以合成一条写成如下：lsof -i:8080 -n -P|awk &amp;#39;{print $2}&amp;#39;|sed &amp;#39;1d&amp;#39;|uniq |xargs kill -9">
+<meta name="twitter:title" content="OSX 文件显示隐藏方法">
+<meta name="twitter:description" content="当在OSX要显示隐藏文件时，可以采用以下的方法：
+显示defaults write com.apple.finder AppleShowAllFiles -bool true  
+隐藏defaults write com.apple.finder AppleShowAllFiles -bool false">
 
     
     <link rel="alternative" href="/atom.xml" title="Ian’s Blog" type="application/atom+xml">
@@ -93,14 +86,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/10/21/OSX-port-occupied/" title="OSX 进程被暂用处理方法" itemprop="url">OSX 进程被暂用处理方法</a>
+      <a href="/2015/10/23/OSX-show-hide-file/" title="OSX 文件显示隐藏方法" itemprop="url">OSX 文件显示隐藏方法</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Ian" target="_blank" itemprop="author">Ian</a>
 		
   <p class="article-time">
-    <time datetime="2015-10-21T13:54:00.000Z" itemprop="datePublished"> 发表于 2015-10-21</time>
+    <time datetime="2015-10-23T07:34:00.000Z" itemprop="datePublished"> 发表于 2015-10-23</time>
     
   </p>
 </header>
@@ -109,15 +102,13 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上两条命令也可以合成一条写成如下："><span class="toc-number">3.</span> <span class="toc-text">以上两条命令也可以合成一条写成如下：</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#显示"><span class="toc-number">1.</span> <span class="toc-text">显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐藏"><span class="toc-number">2.</span> <span class="toc-text">隐藏</span></a></li></ol>
 		
 		</div>
 		
-		<p>当在OSX遇到端口暂用，可以采用以下的方法：</p>
-<h2 id="查看暂用程序信息">查看暂用程序信息</h2><p><code>lsof -i -n -P|grep 8080</code>  </p>
-<p>运行效果如下图：<br><img src="http://7xn3um.com1.z0.glb.clouddn.com/search-port.png" alt=""></p>
-<h2 id="根据PID_kill掉相应的进程">根据PID kill掉相应的进程</h2><p><code>kill -9 31651</code></p>
-<h2 id="以上两条命令也可以合成一条写成如下：">以上两条命令也可以合成一条写成如下：</h2><p><code>lsof -i:8080 -n -P|awk &#39;{print $2}&#39;|sed &#39;1d&#39;|uniq |xargs kill -9</code></p>
+		<p>当在OSX要显示隐藏文件时，可以采用以下的方法：</p>
+<h2 id="显示">显示</h2><p><code>defaults write com.apple.finder AppleShowAllFiles -bool true</code>  </p>
+<h2 id="隐藏">隐藏</h2><p><code>defaults write com.apple.finder AppleShowAllFiles -bool false</code></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -131,7 +122,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/OSX/">OSX</a><a href="/tags/端口/">端口</a>
+  <span></span> <a href="/tags/OSX/">OSX</a>
   </div>
 
 </div>
@@ -140,7 +131,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://china-developer.com/2015/10/21/OSX-port-occupied/" data-title="OSX 进程被暂用处理方法 | Ian’s Blog" data-tsina="1904911451" class="share clearfix">
+	  <div data-url="http://china-developer.com/2015/10/23/OSX-show-hide-file/" data-title="OSX 文件显示隐藏方法 | Ian’s Blog" data-tsina="1904911451" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -153,19 +144,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/10/23/OSX-show-hide-file/" title="OSX 文件显示隐藏方法">
-  <strong>上一篇：</strong><br/>
-  <span>
-  OSX 文件显示隐藏方法</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/10/09/Hexo-Github/"  title="使用Hexo在Github搭建个人Blog步骤">
+<a href="/2015/10/21/OSX-port-occupied/"  title="OSX 进程被暂用处理方法">
  <strong>下一篇：</strong><br/> 
- <span>使用Hexo在Github搭建个人Blog步骤
+ <span>OSX 进程被暂用处理方法
 </span>
 </a>
 </div>
@@ -174,7 +157,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/10/21/OSX-port-occupied/" data-title="OSX 进程被暂用处理方法" data-url="http://china-developer.com/2015/10/21/OSX-port-occupied/"></div>
+	<div class="ds-thread" data-thread-key="2015/10/23/OSX-show-hide-file/" data-title="OSX 文件显示隐藏方法" data-url="http://china-developer.com/2015/10/23/OSX-show-hide-file/"></div>
 </section>
 
 
@@ -184,7 +167,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看暂用程序信息"><span class="toc-number">1.</span> <span class="toc-text">查看暂用程序信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#根据PID_kill掉相应的进程"><span class="toc-number">2.</span> <span class="toc-text">根据PID kill掉相应的进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上两条命令也可以合成一条写成如下："><span class="toc-number">3.</span> <span class="toc-text">以上两条命令也可以合成一条写成如下：</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#显示"><span class="toc-number">1.</span> <span class="toc-text">显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#隐藏"><span class="toc-number">2.</span> <span class="toc-text">隐藏</span></a></li></ol>
  
   </div>
 
