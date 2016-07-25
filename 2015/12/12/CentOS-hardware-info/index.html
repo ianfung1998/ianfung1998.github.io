@@ -11,37 +11,34 @@
     
 
     
-    <meta name="description" content="##查看centos硬件配置
-
+    <meta name="description" content="查看centos硬件配置
 1.查看机器所有硬件信息:12dmidecode |moredmesg |more
 这2个命令出来的信息都非常多,所以建议后面使用”|more”便于查看
 2.查看CPU信息
 方法一:   Linux下CPU相关的参数保存在 /proc/cpuinfo 文件里
    1cat /proc/cpuinfo |more
-方法二:   采用命令 dmesg | grep C">
+方法二:   采用命令 dmesg | grep CPU">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS查看硬件信息命令">
 <meta property="og:url" content="http://china-developer.com/2015/12/12/CentOS-hardware-info/index.html">
 <meta property="og:site_name" content="Ian’s Blog">
-<meta property="og:description" content="##查看centos硬件配置
-
+<meta property="og:description" content="查看centos硬件配置
 1.查看机器所有硬件信息:12dmidecode |moredmesg |more
 这2个命令出来的信息都非常多,所以建议后面使用”|more”便于查看
 2.查看CPU信息
 方法一:   Linux下CPU相关的参数保存在 /proc/cpuinfo 文件里
    1cat /proc/cpuinfo |more
-方法二:   采用命令 dmesg | grep C">
-<meta property="og:updated_time" content="2016-07-25T06:27:42.000Z">
+方法二:   采用命令 dmesg | grep CPU">
+<meta property="og:updated_time" content="2016-07-25T06:29:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS查看硬件信息命令">
-<meta name="twitter:description" content="##查看centos硬件配置
-
+<meta name="twitter:description" content="查看centos硬件配置
 1.查看机器所有硬件信息:12dmidecode |moredmesg |more
 这2个命令出来的信息都非常多,所以建议后面使用”|more”便于查看
 2.查看CPU信息
 方法一:   Linux下CPU相关的参数保存在 /proc/cpuinfo 文件里
    1cat /proc/cpuinfo |more
-方法二:   采用命令 dmesg | grep C">
+方法二:   采用命令 dmesg | grep CPU">
 
     
     <link rel="alternative" href="/atom.xml" title="Ian’s Blog" type="application/atom+xml">
@@ -117,12 +114,11 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查看机器所有硬件信息:"><span class="toc-number">1.</span> <span class="toc-text">1.查看机器所有硬件信息:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看CPU信息"><span class="toc-number">2.</span> <span class="toc-text">2.查看CPU信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:"><span class="toc-number">2.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:"><span class="toc-number">2.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-查看Mem信息"><span class="toc-number">3.</span> <span class="toc-text">3.查看Mem信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-查看磁盘信息"><span class="toc-number">4.</span> <span class="toc-text">4.查看磁盘信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:-1"><span class="toc-number">4.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:-1"><span class="toc-number">4.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-查看网卡信息"><span class="toc-number">5.</span> <span class="toc-text">5.查看网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一："><span class="toc-number">5.1.</span> <span class="toc-text">方法一：</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看centos硬件配置"><span class="toc-number">1.</span> <span class="toc-text">查看centos硬件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查看机器所有硬件信息:"><span class="toc-number">1.1.</span> <span class="toc-text">1.查看机器所有硬件信息:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看CPU信息"><span class="toc-number">1.2.</span> <span class="toc-text">2.查看CPU信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:"><span class="toc-number">1.2.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:"><span class="toc-number">1.2.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-查看Mem信息"><span class="toc-number">1.3.</span> <span class="toc-text">3.查看Mem信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-查看磁盘信息"><span class="toc-number">1.4.</span> <span class="toc-text">4.查看磁盘信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:-1"><span class="toc-number">1.4.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-查看网卡信息"><span class="toc-number">1.5.</span> <span class="toc-text">5.查看网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一："><span class="toc-number">1.5.1.</span> <span class="toc-text">方法一：</span></a></li></ol></li></ol></li></ol>
 		
 		</div>
 		
-		<p>##查看centos硬件配置</p>
-<hr>
+		<h2 id="查看centos硬件配置">查看centos硬件配置</h2><hr>
 <h3 id="1-查看机器所有硬件信息:">1.查看机器所有硬件信息:</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dmidecode <span class="string">|more</span></span><br><span class="line">dmesg <span class="string">|more</span></span><br></pre></td></tr></table></figure>
 <p>这2个命令出来的信息都非常多,所以建议后面使用”|more”便于查看</p>
 <h3 id="2-查看CPU信息">2.查看CPU信息</h3><hr>
@@ -263,7 +259,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查看机器所有硬件信息:"><span class="toc-number">1.</span> <span class="toc-text">1.查看机器所有硬件信息:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看CPU信息"><span class="toc-number">2.</span> <span class="toc-text">2.查看CPU信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:"><span class="toc-number">2.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:"><span class="toc-number">2.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-查看Mem信息"><span class="toc-number">3.</span> <span class="toc-text">3.查看Mem信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-查看磁盘信息"><span class="toc-number">4.</span> <span class="toc-text">4.查看磁盘信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:-1"><span class="toc-number">4.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:-1"><span class="toc-number">4.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-查看网卡信息"><span class="toc-number">5.</span> <span class="toc-text">5.查看网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一："><span class="toc-number">5.1.</span> <span class="toc-text">方法一：</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#查看centos硬件配置"><span class="toc-number">1.</span> <span class="toc-text">查看centos硬件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-查看机器所有硬件信息:"><span class="toc-number">1.1.</span> <span class="toc-text">1.查看机器所有硬件信息:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-查看CPU信息"><span class="toc-number">1.2.</span> <span class="toc-text">2.查看CPU信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:"><span class="toc-number">1.2.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:"><span class="toc-number">1.2.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-查看Mem信息"><span class="toc-number">1.3.</span> <span class="toc-text">3.查看Mem信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-查看磁盘信息"><span class="toc-number">1.4.</span> <span class="toc-text">4.查看磁盘信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一:-1"><span class="toc-number">1.4.1.</span> <span class="toc-text">方法一:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方法二:-1"><span class="toc-number">1.4.2.</span> <span class="toc-text">方法二:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-查看网卡信息"><span class="toc-number">1.5.</span> <span class="toc-text">5.查看网卡信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方法一："><span class="toc-number">1.5.1.</span> <span class="toc-text">方法一：</span></a></li></ol></li></ol></li></ol>
  
   </div>
 
