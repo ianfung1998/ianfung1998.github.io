@@ -29,7 +29,7 @@
 方法一:   Linux下CPU相关的参数保存在 /proc/cpuinfo 文件里
    1cat /proc/cpuinfo |more
 方法二:   采用命令 dmesg | grep CPU">
-<meta property="og:updated_time" content="2016-07-25T06:55:57.000Z">
+<meta property="og:updated_time" content="2016-07-25T07:01:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS查看硬件信息命令">
 <meta name="twitter:description" content="查看centos硬件配置
@@ -182,7 +182,7 @@
 <p>   如果出现乱码情况，可以考虑用 -o iocharset=字符集 参数。</p>
 <p>   可以通过 lsusb 命令查看 USB 设备信息哦：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[root@miix tmp]<span class="preprocessor"># lsusb</span></span><br><span class="line"></span><br><span class="line">Bus <span class="number">001</span> Device <span class="number">001</span>: ID <span class="number">0000</span>:<span class="number">0000</span></span><br><span class="line"></span><br><span class="line">Bus <span class="number">002</span> Device <span class="number">001</span>: ID <span class="number">0000</span>:<span class="number">0000</span></span><br><span class="line"></span><br><span class="line">Bus <span class="number">003</span> Device <span class="number">001</span>: ID <span class="number">0000</span>:<span class="number">0000</span></span><br><span class="line"></span><br><span class="line">Bus <span class="number">004</span> Device <span class="number">002</span>: ID <span class="number">0951</span>:<span class="number">1613</span> Kingston Technology</span><br><span class="line"></span><br><span class="line">Bus <span class="number">004</span> Device <span class="number">001</span>: ID <span class="number">0000</span>:<span class="number">0000</span></span><br></pre></td></tr></table></figure>
-<h2 id="获取内存，cpu真实核数方法"><em>获取内存，cpu真实核数方法</em></h2><ul>
+<h2 id="获取内存，cpu真实核数方法"><strong>获取内存，cpu真实核数方法</strong></h2><ul>
 <li><h3 id="linux内存查看方式"><strong>linux内存查看方式</strong></h3></li>
 </ul>
 <p>如下显示free是显示的当前内存的使用,-m的意思是M字节来显示内容.我们来一起看看.</p>
