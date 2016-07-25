@@ -29,7 +29,7 @@
 方法一:   Linux下CPU相关的参数保存在 /proc/cpuinfo 文件里
    1cat /proc/cpuinfo |more
 方法二:   采用命令 dmesg | grep CPU">
-<meta property="og:updated_time" content="2016-07-25T09:11:08.000Z">
+<meta property="og:updated_time" content="2016-07-25T09:14:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS查看硬件信息命令">
 <meta name="twitter:description" content="查看centos硬件配置
@@ -129,7 +129,7 @@
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">getconf</span> LONG_BIT</span><br></pre></td></tr></table></figure>
 <h3 id="3-查看Mem信息">3.查看Mem信息</h3><hr>
 <p> cat /proc/meminfo |more （注意输出信息的最后一行:MachineMem:   41932272 kB）</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">free</span> -m</span><br><span class="line"></span><br><span class="line">top</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@iZ25j8id5k7Z ~]<span class="preprocessor"># free -m</span></span><br><span class="line">             total       used       <span class="built_in">free</span>     shared    buffers     cached</span><br><span class="line">Mem:          <span class="number">7869</span>       <span class="number">6271</span>       <span class="number">1597</span>          <span class="number">0</span>        <span class="number">150</span>       <span class="number">2091</span></span><br><span class="line">-/+ buffers/cache:       <span class="number">4029</span>       <span class="number">3839</span></span><br><span class="line">Swap:         <span class="number">1023</span>          <span class="number">0</span>       <span class="number">1023</span></span><br></pre></td></tr></table></figure>
 <h3 id="4-查看磁盘信息">4.查看磁盘信息</h3><hr>
 <h4 id="方法一:-1">方法一:</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fdisk <span class="operator">-l</span></span><br></pre></td></tr></table></figure>
 <p>   可以看到系统上的磁盘(包括U盘)的分区以及大小相关信息。</p>
